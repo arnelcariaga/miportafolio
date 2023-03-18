@@ -62,7 +62,7 @@ export default function HomeLayout({ children }) {
             </Row>
 
             <Row className='vh-100 justify-content-center align-items-center'>
-                <Col md={10}>
+                <Col md={10} className="gy-5">
                     <Header devTxtRef={devTxtRef} />
                 </Col>
             </Row>
