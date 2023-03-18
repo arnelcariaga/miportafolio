@@ -27,15 +27,15 @@ function BSNavbar() {
   return (
     <Navbar
       className={styles.navbar}
-      style={{
-        backgroundColor: isScroll && "#000"
-      }}
+      style={isScroll ? {
+        backgroundColor: "#000"
+      } : {}}
       fixed="top"
       expand="lg">
       <Container fluid>
         <Navbar.Brand href="#home" className='text-info fw-bold'>Arnel Studio</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className='shadow-none' />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" className={["ps-5", styles.navbar_collapse]}>
           <Nav className="me-auto">
             <Nav.Link href="#home">Inicio</Nav.Link>
             <Nav.Link href="#link">Acerca de mi</Nav.Link>
