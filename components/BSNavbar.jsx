@@ -32,7 +32,7 @@ function BSNavbar() {
       } : {}}
       fixed="top"
       expand="lg">
-      <Container fluid>
+      <Container>
         <Navbar.Brand href="#home" className='text-info fw-bold'>Arnel Studio</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className='shadow-none' />
         <Navbar.Collapse id="basic-navbar-nav" className={["ps-5", styles.navbar_collapse]}>
